@@ -1,0 +1,78 @@
+{
+  "title": "Plugin Bundle",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "plugin",
+      "type": "rect",
+      "x": 250,
+      "y": 92,
+      "w": 180,
+      "h": 86,
+      "text": "Plugin",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "skills",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 150,
+      "h": 62,
+      "text": "Skills",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "mcp",
+      "type": "rect",
+      "x": 0,
+      "y": 220,
+      "w": 150,
+      "h": 62,
+      "text": "MCP servers",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "apps",
+      "type": "rect",
+      "x": 530,
+      "y": 0,
+      "w": 150,
+      "h": 62,
+      "text": "Apps",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "policy",
+      "type": "rect",
+      "x": 530,
+      "y": 220,
+      "w": 150,
+      "h": 62,
+      "text": "Policy",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "skills",
+      "to": "plugin"
+    },
+    {
+      "type": "arrow",
+      "from": "mcp",
+      "to": "plugin"
+    },
+    {
+      "type": "arrow",
+      "from": "plugin",
+      "to": "apps"
+    },
+    {
+      "type": "arrow",
+      "from": "plugin",
+      "to": "policy"
+    }
+  ]
+}

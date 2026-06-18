@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35.0 -35.0 750.0 352.0" role="img" aria-labelledby="title">
+<title>Plugin Bundle</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
+<rect x="-35.0" y="-35.0" width="750.0" height="352.0" rx="18" fill="#ffffff"/>
+<line x1="150" y1="31.0" x2="250" y2="135.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="150" y1="251.0" x2="250" y2="135.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="430" y1="135.0" x2="530" y2="31.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="430" y1="135.0" x2="530" y2="251.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="250" y="92" width="180" height="86" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
+<text x="340.0" y="140.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Plugin</text>
+<rect x="0" y="0" width="150" height="62" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="75.0" y="36.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Skills</text>
+<rect x="0" y="220" width="150" height="62" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
+<text x="75.0" y="256.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">MCP servers</text>
+<rect x="530" y="0" width="150" height="62" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="605.0" y="36.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Apps</text>
+<rect x="530" y="220" width="150" height="62" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="605.0" y="256.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Policy</text>
+</svg>

@@ -1,0 +1,78 @@
+{
+  "title": "Failure Mode Map",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "agent",
+      "type": "ellipse",
+      "x": 290,
+      "y": 105,
+      "w": 130,
+      "h": 82,
+      "text": "Agent",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "intent",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 170,
+      "h": 62,
+      "text": "Intent drift",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "scope",
+      "type": "rect",
+      "x": 0,
+      "y": 220,
+      "w": 170,
+      "h": 62,
+      "text": "Scope creep",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "tools",
+      "type": "rect",
+      "x": 535,
+      "y": 0,
+      "w": 170,
+      "h": 62,
+      "text": "Tool misuse",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "evidence",
+      "type": "rect",
+      "x": 535,
+      "y": 220,
+      "w": 170,
+      "h": 62,
+      "text": "Weak evidence",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "agent",
+      "to": "intent"
+    },
+    {
+      "type": "arrow",
+      "from": "agent",
+      "to": "scope"
+    },
+    {
+      "type": "arrow",
+      "from": "agent",
+      "to": "tools"
+    },
+    {
+      "type": "arrow",
+      "from": "agent",
+      "to": "evidence"
+    }
+  ]
+}

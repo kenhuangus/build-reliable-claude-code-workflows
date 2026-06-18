@@ -1,0 +1,48 @@
+{
+  "title": "Hook Lifecycle",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "pre",
+      "type": "rect",
+      "x": 0,
+      "y": 90,
+      "w": 160,
+      "h": 80,
+      "text": "Pre-flight\nscope check",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "during",
+      "type": "rect",
+      "x": 250,
+      "y": 90,
+      "w": 160,
+      "h": 80,
+      "text": "During\nlog + block",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "post",
+      "type": "rect",
+      "x": 500,
+      "y": 90,
+      "w": 160,
+      "h": 80,
+      "text": "Post-work\ntest + report",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "type": "arrow",
+      "from": "pre",
+      "to": "during"
+    },
+    {
+      "type": "arrow",
+      "from": "during",
+      "to": "post"
+    }
+  ]
+}

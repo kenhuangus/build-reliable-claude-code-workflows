@@ -1,0 +1,48 @@
+{
+  "title": "Task Contract Layers",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "goal",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 620,
+      "h": 56,
+      "text": "Objective: what outcome should exist?",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "scope",
+      "type": "rect",
+      "x": 0,
+      "y": 76,
+      "w": 620,
+      "h": 56,
+      "text": "Scope: what files and behaviors are in bounds?",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "nongoals",
+      "type": "rect",
+      "x": 0,
+      "y": 152,
+      "w": 620,
+      "h": 56,
+      "text": "Non-goals: what must not change?",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "evidence",
+      "type": "rect",
+      "x": 0,
+      "y": 228,
+      "w": 620,
+      "h": 56,
+      "text": "Evidence: what proves completion?",
+      "backgroundColor": "#f8efef"
+    }
+  ]
+}

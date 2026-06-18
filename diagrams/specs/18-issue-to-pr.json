@@ -1,0 +1,78 @@
+{
+  "title": "Issue to PR Workflow",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "issue",
+      "type": "rect",
+      "x": 0,
+      "y": 80,
+      "w": 125,
+      "h": 70,
+      "text": "Issue",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "plan",
+      "type": "rect",
+      "x": 170,
+      "y": 80,
+      "w": 125,
+      "h": 70,
+      "text": "Plan",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "patch",
+      "type": "rect",
+      "x": 340,
+      "y": 80,
+      "w": 125,
+      "h": 70,
+      "text": "Patch",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "ci",
+      "type": "rect",
+      "x": 510,
+      "y": 80,
+      "w": 125,
+      "h": 70,
+      "text": "CI",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "pr",
+      "type": "rect",
+      "x": 680,
+      "y": 80,
+      "w": 125,
+      "h": 70,
+      "text": "PR",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "type": "arrow",
+      "from": "issue",
+      "to": "plan"
+    },
+    {
+      "type": "arrow",
+      "from": "plan",
+      "to": "patch"
+    },
+    {
+      "type": "arrow",
+      "from": "patch",
+      "to": "ci"
+    },
+    {
+      "type": "arrow",
+      "from": "ci",
+      "to": "pr"
+    }
+  ]
+}

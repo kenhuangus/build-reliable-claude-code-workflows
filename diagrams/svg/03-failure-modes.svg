@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35.0 -35.0 775.0 352.0" role="img" aria-labelledby="title">
+<title>Failure Mode Map</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
+<rect x="-35.0" y="-35.0" width="775.0" height="352.0" rx="18" fill="#ffffff"/>
+<line x1="290" y1="146.0" x2="170" y2="31.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="290" y1="146.0" x2="170" y2="251.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="420" y1="146.0" x2="535" y2="31.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="420" y1="146.0" x2="535" y2="251.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<ellipse cx="355.0" cy="146.0" rx="65.0" ry="41.0" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
+<text x="355.0" y="151.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Agent</text>
+<rect x="0" y="0" width="170" height="62" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="85.0" y="36.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Intent drift</text>
+<rect x="0" y="220" width="170" height="62" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="85.0" y="256.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Scope creep</text>
+<rect x="535" y="0" width="170" height="62" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="620.0" y="36.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Tool misuse</text>
+<rect x="535" y="220" width="170" height="62" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="620.0" y="256.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Weak evidence</text>
+</svg>

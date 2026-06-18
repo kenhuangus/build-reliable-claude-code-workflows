@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35.0 45.0 875.0 140.0" role="img" aria-labelledby="title">
+<title>Issue to PR Workflow</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
+<rect x="-35.0" y="45.0" width="875.0" height="140.0" rx="18" fill="#ffffff"/>
+<line x1="125" y1="115.0" x2="170" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="295" y1="115.0" x2="340" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="465" y1="115.0" x2="510" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="635" y1="115.0" x2="680" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="0" y="80" width="125" height="70" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="62.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Issue</text>
+<rect x="170" y="80" width="125" height="70" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
+<text x="232.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Plan</text>
+<rect x="340" y="80" width="125" height="70" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
+<text x="402.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Patch</text>
+<rect x="510" y="80" width="125" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="572.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">CI</text>
+<rect x="680" y="80" width="125" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="742.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">PR</text>
+</svg>

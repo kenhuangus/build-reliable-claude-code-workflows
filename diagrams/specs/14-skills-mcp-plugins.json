@@ -1,0 +1,50 @@
+{
+  "title": "Skills MCP Plugins",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "skill",
+      "type": "rect",
+      "x": 0,
+      "y": 75,
+      "w": 180,
+      "h": 92,
+      "text": "Skill\nhow to work",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "mcp",
+      "type": "rect",
+      "x": 250,
+      "y": 75,
+      "w": 180,
+      "h": 92,
+      "text": "MCP\nwhat to reach",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "plugin",
+      "type": "rect",
+      "x": 500,
+      "y": 75,
+      "w": 180,
+      "h": 92,
+      "text": "Plugin\nhow to package",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "type": "arrow",
+      "from": "skill",
+      "to": "mcp",
+      "text": "uses"
+    },
+    {
+      "type": "arrow",
+      "from": "mcp",
+      "to": "plugin",
+      "text": "bundled in"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Skill Anatomy",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "skill",
+      "type": "rect",
+      "x": 260,
+      "y": 92,
+      "w": 160,
+      "h": 86,
+      "text": "Skill",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "trigger",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 150,
+      "h": 58,
+      "text": "Trigger",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "workflow",
+      "type": "rect",
+      "x": 0,
+      "y": 220,
+      "w": 150,
+      "h": 58,
+      "text": "Workflow",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "scripts",
+      "type": "rect",
+      "x": 530,
+      "y": 0,
+      "w": 150,
+      "h": 58,
+      "text": "Scripts",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "verify",
+      "type": "rect",
+      "x": 530,
+      "y": 220,
+      "w": 150,
+      "h": 58,
+      "text": "Verification",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "trigger",
+      "to": "skill"
+    },
+    {
+      "type": "arrow",
+      "from": "workflow",
+      "to": "skill"
+    },
+    {
+      "type": "arrow",
+      "from": "skill",
+      "to": "scripts"
+    },
+    {
+      "type": "arrow",
+      "from": "skill",
+      "to": "verify"
+    }
+  ]
+}

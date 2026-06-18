@@ -1,0 +1,67 @@
+{
+  "title": "Speed Without Structure",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "fast",
+      "type": "rect",
+      "x": 20,
+      "y": 90,
+      "w": 160,
+      "h": 78,
+      "text": "Fast agent",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "gate",
+      "type": "diamond",
+      "x": 250,
+      "y": 80,
+      "w": 170,
+      "h": 96,
+      "text": "Harness?",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "risk",
+      "type": "rect",
+      "x": 500,
+      "y": 0,
+      "w": 190,
+      "h": 76,
+      "text": "Risky diff",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "safe",
+      "type": "rect",
+      "x": 500,
+      "y": 180,
+      "w": 190,
+      "h": 76,
+      "text": "Reviewable change",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "type": "arrow",
+      "from": "fast",
+      "to": "gate"
+    },
+    {
+      "type": "arrow",
+      "from": "gate",
+      "to": "risk",
+      "end": "left",
+      "text": "no"
+    },
+    {
+      "type": "arrow",
+      "from": "gate",
+      "to": "safe",
+      "end": "left",
+      "text": "yes"
+    }
+  ]
+}

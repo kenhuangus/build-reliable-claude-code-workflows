@@ -1,0 +1,65 @@
+{
+  "title": "Tests as Trust Boundary",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "proposal",
+      "type": "rect",
+      "x": 0,
+      "y": 90,
+      "w": 150,
+      "h": 80,
+      "text": "Agent\nproposal",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "tests",
+      "type": "diamond",
+      "x": 230,
+      "y": 72,
+      "w": 160,
+      "h": 112,
+      "text": "Checks pass?",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "review",
+      "type": "rect",
+      "x": 470,
+      "y": 0,
+      "w": 170,
+      "h": 74,
+      "text": "Human review",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "revise",
+      "type": "rect",
+      "x": 470,
+      "y": 190,
+      "w": 170,
+      "h": 74,
+      "text": "Revise",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "proposal",
+      "to": "tests"
+    },
+    {
+      "type": "arrow",
+      "from": "tests",
+      "to": "review",
+      "text": "yes"
+    },
+    {
+      "type": "arrow",
+      "from": "tests",
+      "to": "revise",
+      "text": "no"
+    }
+  ]
+}

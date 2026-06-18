@@ -1,0 +1,64 @@
+{
+  "title": "Observable Agent Work",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "inputs",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 180,
+      "h": 80,
+      "text": "Inputs\nprompt + rules",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "actions",
+      "type": "rect",
+      "x": 250,
+      "y": 90,
+      "w": 180,
+      "h": 80,
+      "text": "Actions\ntools + edits",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "outputs",
+      "type": "rect",
+      "x": 500,
+      "y": 0,
+      "w": 180,
+      "h": 80,
+      "text": "Outputs\ndiff + proof",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "audit",
+      "type": "rect",
+      "x": 250,
+      "y": 215,
+      "w": 180,
+      "h": 80,
+      "text": "Audit log",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "inputs",
+      "to": "actions"
+    },
+    {
+      "type": "arrow",
+      "from": "actions",
+      "to": "outputs"
+    },
+    {
+      "type": "arrow",
+      "from": "actions",
+      "to": "audit",
+      "text": "record"
+    }
+  ]
+}

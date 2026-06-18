@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Build Reliable Claude Code Workflows with Guardrails and Tests</title>
+    <meta
+      name="description"
+      content="A 60-slide, 3-hour training deck for reliable AI coding workflows, Skills, MCP, plugins, compound engineering, guardrails, tests, and agent dreaming."
+    />
+    <link rel="stylesheet" href="styles.css?v=9" />
+  </head>
+  <body>
+    <main class="deck" id="deck" aria-live="polite">
+      <section class="slide cover active" data-title="Title">
+        <div class="cover-layout">
+          <div>
+            <p class="eyebrow">3-hour training | 60 slides</p>
+            <h1>Build Reliable Claude Code Workflows with Guardrails and Tests</h1>
+            <p class="lede">Harness engineering for safer AI coding agents, tool ecosystems, compound workflows, and reviewable autonomy.</p>
+          </div>
+          <div class="system-map" aria-label="Workflow system diagram">
+            <div class="map-node map-agent">Agent</div>
+            <div class="map-ring">
+              <span>Specs</span><span>Skills</span><span>MCP</span><span>Tests</span><span>Review</span>
+            </div>
+          </div>
+        </div>
+        <aside class="notes">Open by framing the workshop as engineering the harness around Claude Code, Codex, and similar coding agents.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Session architecture</p>
+        <h2>Three Hours, Three Layers</h2>
+        <div class="cards three">
+          <article><span class="badge">1</span><h3>Hour 1</h3><p>Reliable agent workflows: specs, permissions, hooks, tests, and review.</p></article>
+          <article><span class="badge">2</span><h3>Hour 2</h3><p>Skills, MCP, and plugins: extending the agent without losing control.</p></article>
+          <article><span class="badge">3</span><h3>Hour 3</h3><p>Compound engineering and agent dreaming: orchestrated systems that rehearse before they act.</p></article>
+        </div>
+        <aside class="notes">Each hour has 20 slides. Keep the pacing brisk: about 3 minutes per slide, with exercises replacing lecture time.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Outcome</p>
+        <h2>What We Are Building Toward</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/01-agent-harness.svg" alt="Agent harness system diagram" /></figure>
+        <div class="flow"><div>Request</div><div>Spec</div><div>Skill</div><div>MCP</div><div>Agent</div><div>Tests</div><div>Review</div></div>
+        <p class="callout">The target is not a clever prompt. The target is a repeatable operating system for AI-assisted development.</p>
+        <aside class="notes">Use this as the north star: every later topic is a control surface in this chain.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Why this matters</p>
+        <h2>Speed Without Structure Creates Risk</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/02-speed-risk.svg" alt="Fast agent routed through harness decision diagram" /></figure>
+        <div class="split">
+          <div class="panel"><h3>Fast but fragile</h3><ul><li>Large opaque diffs</li><li>Unclear assumptions</li><li>Skipped validation</li><li>Tool overreach</li></ul></div>
+          <div class="panel accent"><h3>Fast and governed</h3><ul><li>Scoped tasks</li><li>Auditable actions</li><li>Automated checks</li><li>Human approval points</li></ul></div>
+        </div>
+        <aside class="notes">Ask for a quick show of hands: who has seen a coding agent make a surprisingly useful change and a surprisingly risky one?</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Reliability model</p>
+        <h2>The Model Is Not the Whole Product</h2>
+        <div class="observability">
+          <div><strong>Model</strong><span>Reasoning, code generation, summarization, planning.</span></div>
+          <div><strong>Harness</strong><span>Instructions, tools, permissions, tests, logs, review.</span></div>
+          <div><strong>Organization</strong><span>Policy, ownership, release process, security posture.</span></div>
+        </div>
+        <aside class="notes">The same model can be reliable or dangerous depending on the harness around it.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Failure modes</p>
+        <h2>Where Coding Agents Go Wrong</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/03-failure-modes.svg" alt="Agent failure modes surrounding the agent" /></figure>
+        <div class="matrix">
+          <div><strong>Intent drift</strong><span>Solves a nearby problem.</span></div>
+          <div><strong>Scope creep</strong><span>Changes unrelated files.</span></div>
+          <div><strong>Invented facts</strong><span>Assumes APIs or project rules.</span></div>
+          <div><strong>Tool misuse</strong><span>Runs risky commands too early.</span></div>
+          <div><strong>Weak evidence</strong><span>Reports done without proof.</span></div>
+          <div><strong>Review fatigue</strong><span>Leaves humans with an unreadable diff.</span></div>
+        </div>
+        <aside class="notes">Connect each failure mode to a control later in the deck.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Harness engineering</p>
+        <h2>The Discipline</h2>
+        <ul class="big-list">
+          <li><strong>Specify:</strong> define task, scope, non-goals, and evidence.</li>
+          <li><strong>Constrain:</strong> limit tools, filesystem, credentials, and blast radius.</li>
+          <li><strong>Validate:</strong> require tests, logs, screenshots, or artifacts.</li>
+          <li><strong>Review:</strong> keep human judgment at meaningful decision points.</li>
+        </ul>
+        <aside class="notes">This is the workshop's recurring four-part rhythm.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Task contract</p>
+        <h2>A Reliable Task Has Four Parts</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/04-task-contract.svg" alt="Task contract layers diagram" /></figure>
+        <div class="stack">
+          <div><strong>Objective</strong><span>What should be true when the task is done?</span></div>
+          <div><strong>Scope</strong><span>Which files, modules, and behaviors are in bounds?</span></div>
+          <div><strong>Non-goals</strong><span>What should the agent avoid changing?</span></div>
+          <div><strong>Evidence</strong><span>Which checks prove the work is credible?</span></div>
+        </div>
+        <aside class="notes">A task contract is the smallest useful spec for agent work.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Example</p>
+        <h2>Weak Prompt vs Task Contract</h2>
+        <div class="split">
+          <div class="panel"><h3>Weak</h3><p class="lede">"Fix the dashboard bugs and clean it up."</p></div>
+          <div class="panel accent"><h3>Stronger</h3><ul><li>Fix broken revenue filter</li><li>Edit dashboard module only</li><li>No visual redesign</li><li>Run focused UI tests</li></ul></div>
+        </div>
+        <aside class="notes">Have participants identify what the weak prompt leaves open.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Exercise</p>
+        <h2>Rewrite a Risky Request</h2>
+        <div class="exercise">
+          <p class="prompt">"Upgrade our auth flow and make it more secure."</p>
+          <div class="columns">
+            <div><h3>Add</h3><ul><li>Specific behavior</li><li>Allowed files</li><li>Security non-goals</li><li>Required tests</li></ul></div>
+            <div><h3>Timebox</h3><p>Six minutes. Then compare which risks your contract reduces.</p></div>
+          </div>
+        </div>
+        <aside class="notes">Keep this fast. The point is not perfect requirements; it is explicit constraints.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Instruction layers</p>
+        <h2>Put Instructions Where They Belong</h2>
+        <div class="cards three">
+          <article><h3>Global</h3><p>Safety posture, review behavior, irreversible action rules.</p></article>
+          <article><h3>Project</h3><p>Architecture, test commands, coding style, release process.</p></article>
+          <article><h3>Task</h3><p>Current goal, scope, acceptance checks, stop conditions.</p></article>
+        </div>
+        <p class="callout">Stable rules belong upstream. Volatile rules belong close to the task.</p>
+        <aside class="notes">Mention files such as AGENTS.md, CLAUDE.md, README runbooks, and task templates.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Project instructions</p>
+        <h2>Example Project Rules</h2>
+        <pre class="code"><code>Before editing:
+  Inspect existing patterns first.
+
+During editing:
+  Keep changes scoped to requested modules.
+
+Before final response:
+  Run focused tests or explain why not.
+  List changed files and remaining risks.</code></pre>
+        <aside class="notes">Project rules should be boring, durable, and enforceable.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Permissions</p>
+        <h2>Tool Access Is a Risk Budget</h2>
+        <figure class="diagram-card compact micro"><img src="diagrams/svg/05-permission-zones.svg" alt="Allow, ask first, and block permission zones" /></figure>
+        <div class="permission-grid tight">
+          <div class="allow"><h3>Allow</h3><p>Read code, inspect diffs, run focused tests, format touched files.</p></div>
+          <div class="review"><h3>Ask first</h3><p>Install packages, edit CI, run migrations, touch auth or billing.</p></div>
+          <div class="deny"><h3>Block</h3><p>Force-push, delete data, reveal secrets, publish releases unsupervised.</p></div>
+        </div>
+        <aside class="notes">The same action can move categories depending on environment and branch.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Hooks</p>
+        <h2>Hooks Make Policy Executable</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/06-hook-lifecycle.svg" alt="Pre-flight, during work, and post-work hook lifecycle" /></figure>
+        <div class="cards three">
+          <article><h3>Pre-flight</h3><p>Check branch, load context, confirm scope.</p></article>
+          <article><h3>During work</h3><p>Log tool calls, block risky commands, detect out-of-scope edits.</p></article>
+          <article><h3>Post-work</h3><p>Run checks, collect evidence, prepare review.</p></article>
+        </div>
+        <aside class="notes">Hooks can be local scripts, wrappers, CI gates, or platform policies.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Tests</p>
+        <h2>Tests Are the Trust Boundary</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/07-test-boundary.svg" alt="Agent proposal checked by tests before review" /></figure>
+        <div class="pyramid">
+          <div>Human approval</div>
+          <div>End-to-end checks</div>
+          <div>Integration tests</div>
+          <div>Unit tests, lint, type checks</div>
+        </div>
+        <p class="callout">The agent can propose. Evidence makes the proposal reviewable.</p>
+        <aside class="notes">Warn against trusting "done" without captured evidence.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Evidence ladder</p>
+        <h2>Ask for the Smallest Useful Proof</h2>
+        <div class="checklist">
+          <label><input type="checkbox" /> Focused test for changed behavior</label>
+          <label><input type="checkbox" /> Regression check for nearby behavior</label>
+          <label><input type="checkbox" /> Type or lint check for touched code</label>
+          <label><input type="checkbox" /> Screenshot or trace for UI change</label>
+          <label><input type="checkbox" /> CI gate before merge</label>
+        </div>
+        <aside class="notes">Cheap local checks first, broader gates as risk rises.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Observability</p>
+        <h2>Make Agent Work Inspectable</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/08-observability.svg" alt="Inputs actions outputs and audit log for observable agent work" /></figure>
+        <div class="observability">
+          <div><strong>Inputs</strong><span>Prompt, instructions, repo context, tool permissions.</span></div>
+          <div><strong>Actions</strong><span>Files read, commands run, files changed, external calls.</span></div>
+          <div><strong>Outputs</strong><span>Diff, tests, logs, screenshots, assumptions, risks.</span></div>
+        </div>
+        <aside class="notes">A teammate should be able to reconstruct what happened.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Review</p>
+        <h2>Review the Diff and the Story</h2>
+        <ul class="big-list">
+          <li>Does the diff match the task contract?</li>
+          <li>Are unrelated edits absent or explained?</li>
+          <li>Did tests cover the highest-risk behavior?</li>
+          <li>Are assumptions and skipped checks visible?</li>
+        </ul>
+        <aside class="notes">Human review should focus on risk and judgment, not redoing every keystroke.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Workflow blueprint</p>
+        <h2>Hour 1 Reference Workflow</h2>
+        <div class="blueprint">
+          <div><span>1</span>Write contract</div><div><span>2</span>Load instructions</div><div><span>3</span>Constrain tools</div><div><span>4</span>Inspect first</div>
+          <div><span>5</span>Edit narrowly</div><div><span>6</span>Run checks</div><div><span>7</span>Summarize evidence</div><div><span>8</span>Review</div>
+        </div>
+        <aside class="notes">This becomes the base pattern for every extension later.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Hour 1 lab</p>
+        <h2>Build a Minimal Harness</h2>
+        <div class="workshop-grid">
+          <div><h3>Pick</h3><p>A bug fix, UI tweak, dependency update, or test repair.</p></div>
+          <div><h3>Design</h3><p>Task contract, permissions, checks, and final evidence.</p></div>
+          <div><h3>Stress test</h3><p>What could the agent do wrong? Which control catches it?</p></div>
+        </div>
+        <aside class="notes">This is a 10-minute individual or pair exercise.</aside>
+      </section>
+
+      <section class="slide divider">
+        <p class="eyebrow">Hour 2</p>
+        <h2>Skills, MCP, and Plugins</h2>
+        <p class="lede">How to extend coding agents with reusable procedures, external context, and tool ecosystems while preserving control.</p>
+        <aside class="notes">Define the terms before comparing them.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Skills</p>
+        <h2>What Is a Skill?</h2>
+        <div class="cards three">
+          <article><h3>Reusable procedure</h3><p>A skill teaches the agent how to perform a recurring workflow.</p></article>
+          <article><h3>Local expertise</h3><p>It packages instructions, examples, scripts, templates, and assets.</p></article>
+          <article><h3>Triggerable memory</h3><p>It activates when the task clearly matches its purpose.</p></article>
+        </div>
+        <aside class="notes">Skills are not magic; they are structured operational knowledge.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Skill anatomy</p>
+        <h2>A Skill Should Contain</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/09-skill-anatomy.svg" alt="Skill anatomy with trigger workflow scripts and verification" /></figure>
+        <div class="matrix">
+          <div><strong>Purpose</strong><span>When to use it.</span></div>
+          <div><strong>Workflow</strong><span>Steps the agent should follow.</span></div>
+          <div><strong>References</strong><span>Docs, examples, policies.</span></div>
+          <div><strong>Scripts</strong><span>Reusable automation.</span></div>
+          <div><strong>Assets</strong><span>Templates and starter files.</span></div>
+          <div><strong>Verification</strong><span>How to prove success.</span></div>
+        </div>
+        <aside class="notes">A strong skill reduces repeated explanation and repeated mistakes.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Skill example</p>
+        <h2>Security Fix Skill</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/10-skill-security.svg" alt="Security finding to trace to patch to regression test" /></figure>
+        <pre class="code"><code>Use when:
+  A validated security finding needs a fix.
+
+Process:
+  1. Confirm source, sink, and exploit path.
+  2. Patch the smallest safe boundary.
+  3. Add regression coverage.
+  4. Report residual risk.</code></pre>
+        <aside class="notes">The value is not only code guidance; it is the sequence and proof standard.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Skill examples</p>
+        <h2>Good Skill Candidates</h2>
+        <div class="cards four">
+          <article><h3>PR review</h3><p>Find bugs, risks, and test gaps.</p></article>
+          <article><h3>Release notes</h3><p>Summarize commits into user-facing language.</p></article>
+          <article><h3>Migration</h3><p>Apply repeated codebase transformations.</p></article>
+          <article><h3>Docs update</h3><p>Follow voice, structure, and examples.</p></article>
+        </div>
+        <aside class="notes">If a senior engineer repeats the same guidance weekly, it may be a skill.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Skill policy</p>
+        <h2>When Not to Make a Skill</h2>
+        <ul class="big-list">
+          <li>The task is one-off and unlikely to repeat.</li>
+          <li>The process is still changing every week.</li>
+          <li>The instruction depends on hidden tribal knowledge.</li>
+          <li>The skill would bypass required human judgment.</li>
+        </ul>
+        <aside class="notes">A premature skill can fossilize a bad process.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">MCP</p>
+        <h2>What Is MCP?</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/11-mcp-pipeline.svg" alt="Agent to MCP client to MCP server to tool and data pipeline" /></figure>
+        <p class="lede">Model Context Protocol is a standard way for agents to connect to tools, data, and services through explicit server capabilities.</p>
+        <div class="flow"><div>Agent</div><div>MCP client</div><div>MCP server</div><div>Tool</div><div>Data</div><div>Result</div><div>Review</div></div>
+        <aside class="notes">If the user said MPC, clarify in speech that in agent tooling this is usually MCP: Model Context Protocol.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">MCP architecture</p>
+        <h2>MCP Separates Capability From Reasoning</h2>
+        <div class="observability">
+          <div><strong>Agent</strong><span>Chooses goals, plans steps, interprets results.</span></div>
+          <div><strong>MCP server</strong><span>Exposes specific tools, resources, and schemas.</span></div>
+          <div><strong>Policy</strong><span>Controls auth, audit, permissions, and confirmation.</span></div>
+        </div>
+        <aside class="notes">The agent does not need raw access to everything; the server exposes constrained affordances.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">MCP examples</p>
+        <h2>Useful MCP Servers for Engineering</h2>
+        <div class="matrix">
+          <div><strong>GitHub</strong><span>Issues, PRs, comments, checks.</span></div>
+          <div><strong>Docs</strong><span>Search product or internal docs.</span></div>
+          <div><strong>Database</strong><span>Read schemas, never raw secrets.</span></div>
+          <div><strong>CI</strong><span>Inspect failed jobs and logs.</span></div>
+          <div><strong>Calendar</strong><span>Coordinate release windows.</span></div>
+          <div><strong>Observability</strong><span>Fetch traces, logs, metrics.</span></div>
+        </div>
+        <aside class="notes">Examples should be scoped to read or bounded write actions.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">MCP safety</p>
+        <h2>Design MCP Tools With Boundaries</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/12-mcp-boundaries.svg" alt="MCP read write and admin boundary diagram" /></figure>
+        <ul class="big-list">
+          <li>Prefer narrow tools over generic shell or database access.</li>
+          <li>Require confirmation before writes or external side effects.</li>
+          <li>Return structured data instead of giant unbounded blobs.</li>
+          <li>Log user, tool, arguments, result, and timestamp.</li>
+        </ul>
+        <aside class="notes">The safest MCP server is explicit about what cannot be done.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Plugins</p>
+        <h2>What Is a Plugin?</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/13-plugin-bundle.svg" alt="Plugin bundle containing skills MCP servers apps and policy" /></figure>
+        <div class="cards three">
+          <article><h3>Packaged capability</h3><p>A bundle of skills, tools, apps, MCP servers, or workflows.</p></article>
+          <article><h3>Installable surface</h3><p>It makes a domain available to the agent as a coherent unit.</p></article>
+          <article><h3>Governance unit</h3><p>It can carry permissions, docs, and review expectations.</p></article>
+        </div>
+        <aside class="notes">Plugins are often how teams distribute trusted agent extensions.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Comparison</p>
+        <h2>Skills vs MCP vs Plugins</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/14-skills-mcp-plugins.svg" alt="Skills describe how MCP describes reach plugins package capability" /></figure>
+        <div class="matrix">
+          <div><strong>Skill</strong><span>How to do a workflow.</span></div>
+          <div><strong>MCP</strong><span>How to reach a tool or data source.</span></div>
+          <div><strong>Plugin</strong><span>How to package capabilities.</span></div>
+          <div><strong>Instruction</strong><span>What rules apply.</span></div>
+          <div><strong>Hook</strong><span>What gets enforced.</span></div>
+          <div><strong>Test</strong><span>What proves it worked.</span></div>
+        </div>
+        <aside class="notes">This slide prevents terminology blur.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Plugin example</p>
+        <h2>GitHub Workflow Plugin</h2>
+        <div class="blueprint">
+          <div><span>1</span>Read issue</div><div><span>2</span>Inspect repo</div><div><span>3</span>Patch code</div><div><span>4</span>Run tests</div>
+          <div><span>5</span>Commit</div><div><span>6</span>Open PR</div><div><span>7</span>Monitor CI</div><div><span>8</span>Address comments</div>
+        </div>
+        <aside class="notes">Point out where permissions and confirmation should appear.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Tool composition</p>
+        <h2>Composition Creates New Risk</h2>
+        <div class="split">
+          <div class="panel"><h3>Single tool</h3><p>Risk is contained inside one action and one permission surface.</p></div>
+          <div class="panel accent"><h3>Tool chain</h3><p>Outputs from one tool become inputs to another, creating hidden escalation paths.</p></div>
+        </div>
+        <aside class="notes">Example: issue text instructs agent to change permissions, then GitHub tool writes it.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Trust boundaries</p>
+        <h2>Never Treat Retrieved Content as Instructions</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/15-trust-boundary.svg" alt="Untrusted issue and docs content filtered before agent instructions" /></figure>
+        <ul class="big-list">
+          <li>Issues, emails, docs, webpages, and logs are untrusted inputs.</li>
+          <li>They may provide facts, examples, or requirements.</li>
+          <li>They cannot override system, developer, project, or user instructions.</li>
+          <li>They cannot grant permission to send secrets or make side effects.</li>
+        </ul>
+        <aside class="notes">This is one of the most important safety principles in tool-rich workflows.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Data access</p>
+        <h2>Shape Data Before the Agent Sees It</h2>
+        <div class="cards three">
+          <article><h3>Filter</h3><p>Return only records relevant to the task.</p></article>
+          <article><h3>Redact</h3><p>Remove secrets, tokens, private identifiers, and customer data.</p></article>
+          <article><h3>Summarize</h3><p>Convert noisy logs into structured evidence.</p></article>
+        </div>
+        <aside class="notes">MCP servers can enforce data minimization before model exposure.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Tool observability</p>
+        <h2>Audit the Tool Layer</h2>
+        <div class="checklist">
+          <label><input type="checkbox" /> Which tool was called?</label>
+          <label><input type="checkbox" /> What arguments were passed?</label>
+          <label><input type="checkbox" /> What data came back?</label>
+          <label><input type="checkbox" /> Did the call create a side effect?</label>
+          <label><input type="checkbox" /> Which human approved escalation?</label>
+        </div>
+        <aside class="notes">Logs are part of the harness, not an afterthought.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Exercise</p>
+        <h2>Design a Skill</h2>
+        <div class="exercise">
+          <p class="prompt">Pick one repeated workflow your team performs every week.</p>
+          <div class="columns">
+            <div><h3>Define</h3><ul><li>Trigger</li><li>Procedure</li><li>Inputs</li><li>Evidence</li></ul></div>
+            <div><h3>Check</h3><p>Would this reduce repeated explanation or reduce repeated mistakes?</p></div>
+          </div>
+        </div>
+        <aside class="notes">Examples: release checklist, PR triage, incident summary, migration guide.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Exercise</p>
+        <h2>Choose MCP Boundaries</h2>
+        <div class="kanban">
+          <div><h3>Read</h3><p>List open PRs</p><p>Fetch failing CI logs</p></div>
+          <div><h3>Ask first</h3><p>Post a comment</p><p>Open a PR</p></div>
+          <div><h3>Block</h3><p>Change repo permissions</p><p>Expose secrets</p></div>
+        </div>
+        <aside class="notes">Have participants adapt the categories for their own environment.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Debugging</p>
+        <h2>When Tool Chains Fail</h2>
+        <ul class="big-list">
+          <li>Check whether the agent chose the wrong capability.</li>
+          <li>Check whether the tool returned stale, partial, or oversized context.</li>
+          <li>Check whether a permission boundary blocked the action.</li>
+          <li>Check whether the final evidence actually proves the result.</li>
+        </ul>
+        <aside class="notes">Debug the system, not only the prompt.</aside>
+      </section>
+
+      <section class="slide divider">
+        <p class="eyebrow">Hour 3</p>
+        <h2>Compound Engineering and Agent Dreaming</h2>
+        <p class="lede">Designing multi-step agent systems that plan, rehearse, verify, and escalate instead of acting as a single opaque assistant.</p>
+        <aside class="notes">Define both terms clearly before examples.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Compound engineering</p>
+        <h2>What Is Compound Engineering?</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/16-compound-workflow.svg" alt="Compound workflow from planner to retriever to coder to tester to critic" /></figure>
+        <p class="lede">Compound engineering is building systems where multiple agent steps, tools, checks, memories, and human gates work together as one engineered workflow.</p>
+        <div class="flow"><div>Planner</div><div>Retriever</div><div>Coder</div><div>Tester</div><div>Reviewer</div><div>Reporter</div><div>Human</div></div>
+        <aside class="notes">Compound systems are more like pipelines than chat sessions.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Architecture</p>
+        <h2>Compound Workflow Components</h2>
+        <div class="matrix">
+          <div><strong>State</strong><span>What the workflow remembers.</span></div>
+          <div><strong>Roles</strong><span>Planner, builder, tester, critic.</span></div>
+          <div><strong>Tools</strong><span>MCP, scripts, APIs, local commands.</span></div>
+          <div><strong>Gates</strong><span>Policy, tests, approvals.</span></div>
+          <div><strong>Artifacts</strong><span>Plans, diffs, reports, traces.</span></div>
+          <div><strong>Fallbacks</strong><span>What happens when confidence drops.</span></div>
+        </div>
+        <aside class="notes">This is a design checklist for more autonomous systems.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Multi-agent pattern</p>
+        <h2>Separate Duties to Reduce Blind Spots</h2>
+        <figure class="diagram-card compact mini"><img src="diagrams/svg/17-agent-roles.svg" alt="Planner builder tester and critic around one task" /></figure>
+        <div class="cards four">
+          <article><h3>Planner</h3><p>Defines approach and risks.</p></article>
+          <article><h3>Builder</h3><p>Makes scoped changes.</p></article>
+          <article><h3>Tester</h3><p>Runs and expands evidence.</p></article>
+          <article><h3>Critic</h3><p>Reviews diff and assumptions.</p></article>
+        </div>
+        <aside class="notes">The agents may be separate models, prompts, threads, or stages in one orchestrator.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Guardrail pipeline</p>
+        <h2>Guardrails Across the Whole Workflow</h2>
+        <div class="blueprint">
+          <div><span>1</span>Classify task</div><div><span>2</span>Select skills</div><div><span>3</span>Grant tools</div><div><span>4</span>Plan</div>
+          <div><span>5</span>Act</div><div><span>6</span>Test</div><div><span>7</span>Review</div><div><span>8</span>Escalate</div>
+        </div>
+        <aside class="notes">Guardrails should happen before, during, and after agent action.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Example</p>
+        <h2>Issue-to-PR Compound Workflow</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/18-issue-to-pr.svg" alt="Issue to plan to patch to CI to PR workflow" /></figure>
+        <div class="stack">
+          <div><strong>Input</strong><span>Issue, labels, repo instructions, failing test.</span></div>
+          <div><strong>Plan</strong><span>Agent proposes files, checks, and risk level.</span></div>
+          <div><strong>Build</strong><span>Scoped edit with tests and review summary.</span></div>
+          <div><strong>Gate</strong><span>Human approves PR creation and CI watches it.</span></div>
+        </div>
+        <aside class="notes">This example connects GitHub plugin, project instructions, tests, and review.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Example</p>
+        <h2>Database Migration Workflow</h2>
+        <div class="permission-grid">
+          <div class="allow"><h3>Agent may</h3><p>Draft migration, tests, rollback plan.</p></div>
+          <div class="review"><h3>Human reviews</h3><p>Data loss risk, lock risk, rollout plan.</p></div>
+          <div class="deny"><h3>Agent cannot</h3><p>Run production migration or alter live data alone.</p></div>
+        </div>
+        <aside class="notes">High-risk workflows need stronger gates and evidence.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Agent dreaming</p>
+        <h2>What Is Agent Dreaming?</h2>
+        <p class="lede">Agent dreaming is structured rehearsal: the agent simulates plans, failures, tests, and review objections before touching production code or systems.</p>
+        <p class="callout">Dreaming is not free-form imagination. It is bounded scenario rehearsal with artifacts.</p>
+        <aside class="notes">Use careful language: this is a design pattern, not anthropomorphism.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Dreaming loop</p>
+        <h2>Rehearse Before Acting</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/19-dream-loop.svg" alt="Agent dreaming loop from goal to plan to simulate to critique to act" /></figure>
+        <div class="flow"><div>Goal</div><div>Plan</div><div>Simulate</div><div>Critique</div><div>Revise</div><div>Gate</div><div>Act</div></div>
+        <aside class="notes">Dreaming is useful when real action is expensive, risky, or hard to reverse.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Dream artifacts</p>
+        <h2>What a Dream Produces</h2>
+        <div class="matrix">
+          <div><strong>Plan variants</strong><span>Different ways to solve the task.</span></div>
+          <div><strong>Failure list</strong><span>What might go wrong.</span></div>
+          <div><strong>Test plan</strong><span>Evidence needed before trust.</span></div>
+          <div><strong>Rollback plan</strong><span>How to undo safely.</span></div>
+          <div><strong>Questions</strong><span>Missing decisions for humans.</span></div>
+          <div><strong>Confidence</strong><span>What is known versus assumed.</span></div>
+        </div>
+        <aside class="notes">Dream artifacts make the rehearsal reviewable.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Dream safety</p>
+        <h2>Keep Dreaming Bounded</h2>
+        <ul class="big-list">
+          <li>Dreams cannot authorize actions.</li>
+          <li>Dreams must cite real context or label assumptions.</li>
+          <li>Dreams should produce checks, not bypass them.</li>
+          <li>Dreams should be discarded when reality contradicts them.</li>
+        </ul>
+        <aside class="notes">The danger is treating a plausible rehearsal as proof.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Dream example</p>
+        <h2>Before a Refactor</h2>
+        <div class="stack">
+          <div><strong>Dream</strong><span>List likely call sites and breakage modes.</span></div>
+          <div><strong>Reality check</strong><span>Use code search, tests, and impact analysis.</span></div>
+          <div><strong>Plan</strong><span>Choose smallest refactor with rollback path.</span></div>
+          <div><strong>Act</strong><span>Edit only after the rehearsal creates evidence tasks.</span></div>
+        </div>
+        <aside class="notes">Dreaming guides investigation; it does not replace investigation.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Dream example</p>
+        <h2>Before an Incident Fix</h2>
+        <div class="cards three">
+          <article><h3>Hypothesize</h3><p>What changed? What symptoms match?</p></article>
+          <article><h3>Rehearse</h3><p>What fixes could make things worse?</p></article>
+          <article><h3>Gate</h3><p>What evidence is needed before deploy?</p></article>
+        </div>
+        <aside class="notes">This is especially useful under pressure, where agents and humans both overfit quickly.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Compound plus dreaming</p>
+        <h2>The Safe Autonomy Pattern</h2>
+        <figure class="diagram-card compact"><img src="diagrams/svg/20-safe-autonomy.svg" alt="Safe autonomy pattern from risk classification to dreaming to human gate to narrow action" /></figure>
+        <div class="blueprint">
+          <div><span>1</span>Classify risk</div><div><span>2</span>Dream plan</div><div><span>3</span>Critique plan</div><div><span>4</span>Ask if needed</div>
+          <div><span>5</span>Act narrowly</div><div><span>6</span>Run evidence</div><div><span>7</span>Review diff</div><div><span>8</span>Record lessons</div>
+        </div>
+        <aside class="notes">This pattern is practical for semi-autonomous coding workflows.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Capstone</p>
+        <h2>Design a 60-Minute Team Workflow</h2>
+        <div class="workshop-grid">
+          <div><h3>Workflow</h3><p>Pick one recurring engineering task.</p></div>
+          <div><h3>Harness</h3><p>Add specs, Skills, MCP, plugins, tests, and review.</p></div>
+          <div><h3>Dream</h3><p>Rehearse failures before granting action.</p></div>
+        </div>
+        <aside class="notes">This is the main hour 3 hands-on activity.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Capstone canvas</p>
+        <h2>Fill This Out</h2>
+        <div class="checklist two-col">
+          <label><input type="checkbox" /> Task contract</label><label><input type="checkbox" /> Skill needed?</label>
+          <label><input type="checkbox" /> MCP tools needed?</label><label><input type="checkbox" /> Plugin boundary</label>
+          <label><input type="checkbox" /> Tests and evidence</label><label><input type="checkbox" /> Dream rehearsal</label>
+        </div>
+        <aside class="notes">Have groups present one control they added after the dream step.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Rollout</p>
+        <h2>Start With One Workflow</h2>
+        <div class="timeline">
+          <div><strong>Week 1</strong><span>Pick workflow and task contract.</span></div>
+          <div><strong>Week 2</strong><span>Add tests and evidence summary.</span></div>
+          <div><strong>Week 3</strong><span>Create one skill or plugin.</span></div>
+          <div><strong>Week 4</strong><span>Add MCP or compound orchestration.</span></div>
+        </div>
+        <aside class="notes">Adoption is more reliable when the first workflow is narrow and valuable.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Anti-patterns</p>
+        <h2>What to Avoid</h2>
+        <div class="matrix">
+          <div><strong>Prompt pile</strong><span>Long instructions nobody maintains.</span></div>
+          <div><strong>Tool buffet</strong><span>Every tool available all the time.</span></div>
+          <div><strong>Fake review</strong><span>Humans approve unreadable diffs.</span></div>
+          <div><strong>Untested autonomy</strong><span>Agent acts without evidence.</span></div>
+          <div><strong>Memory drift</strong><span>Old context keeps steering work.</span></div>
+          <div><strong>Dream worship</strong><span>Simulated confidence replaces proof.</span></div>
+        </div>
+        <aside class="notes">These are warning signs that the harness needs redesign.</aside>
+      </section>
+
+      <section class="slide">
+        <p class="eyebrow">Final checklist</p>
+        <h2>Your Reliable Agent Stack</h2>
+        <div class="checklist two-col">
+          <label><input type="checkbox" /> Project instructions</label><label><input type="checkbox" /> Task contract template</label>
+          <label><input type="checkbox" /> Permission policy</label><label><input type="checkbox" /> Validation hooks</label>
+          <label><input type="checkbox" /> Skills library</label><label><input type="checkbox" /> MCP boundaries</label>
+          <label><input type="checkbox" /> Plugin governance</label><label><input type="checkbox" /> Dream rehearsal step</label>
+        </div>
+        <aside class="notes">This is the take-home checklist.</aside>
+      </section>
+
+      <section class="slide final">
+        <p class="eyebrow">Close</p>
+        <h2>Reliable Agents Are Engineered</h2>
+        <p class="lede">The future of AI coding is not just better prompts. It is better systems around the agent: constrained, observable, testable, and reviewable.</p>
+        <div class="closing-grid">
+          <div>Specify</div><div>Constrain</div><div>Rehearse</div><div>Validate</div>
+        </div>
+        <aside class="notes">End with the concrete ask: implement one workflow harness this week.</aside>
+      </section>
+    </main>
+
+    <nav class="controls" aria-label="Slide controls">
+      <button id="backBtn" type="button" aria-label="Previous slide">Back</button>
+      <div class="progress-wrap" aria-hidden="true"><div class="progress" id="progress"></div></div>
+      <span id="counter" class="counter">1 / 1</span>
+      <button id="notesBtn" type="button" aria-label="Toggle speaker notes">Notes</button>
+      <button id="forwardBtn" type="button" aria-label="Next slide">Forward</button>
+    </nav>
+
+    <script src="script.js?v=3"></script>
+  </body>
+</html>

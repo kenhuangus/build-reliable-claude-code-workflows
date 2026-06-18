@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35.0 -35.0 750.0 348.0" role="img" aria-labelledby="title">
+<title>Skill Anatomy</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
+<rect x="-35.0" y="-35.0" width="750.0" height="348.0" rx="18" fill="#ffffff"/>
+<line x1="150" y1="29.0" x2="260" y2="135.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="150" y1="249.0" x2="260" y2="135.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="420" y1="135.0" x2="530" y2="29.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="420" y1="135.0" x2="530" y2="249.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="260" y="92" width="160" height="86" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
+<text x="340.0" y="140.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Skill</text>
+<rect x="0" y="0" width="150" height="58" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="75.0" y="34.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Trigger</text>
+<rect x="0" y="220" width="150" height="58" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="75.0" y="254.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Workflow</text>
+<rect x="530" y="0" width="150" height="58" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
+<text x="605.0" y="34.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Scripts</text>
+<rect x="530" y="220" width="150" height="58" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="605.0" y="254.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Verification</text>
+</svg>

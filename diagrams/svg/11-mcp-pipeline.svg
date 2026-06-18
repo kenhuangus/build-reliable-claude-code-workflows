@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35.0 -35.0 755.0 330.0" role="img" aria-labelledby="title">
+<title>MCP Pipeline</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
+<rect x="-35.0" y="-35.0" width="755.0" height="330.0" rx="18" fill="#ffffff"/>
+<line x1="130" y1="125.0" x2="185" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="315" y1="125.0" x2="370" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="500" y1="125.0" x2="555" y2="35.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="500" y1="125.0" x2="555" y2="225.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="0" y="90" width="130" height="70" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
+<text x="65.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Agent</text>
+<rect x="185" y="90" width="130" height="70" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
+<text x="250.0" y="121.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">MCP</text>
+<text x="250.0" y="139.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">client</text>
+<rect x="370" y="90" width="130" height="70" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
+<text x="435.0" y="121.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">MCP</text>
+<text x="435.0" y="139.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">server</text>
+<rect x="555" y="0" width="130" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="620.0" y="40.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Tool</text>
+<rect x="555" y="190" width="130" height="70" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="620.0" y="230.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Data</text>
+</svg>

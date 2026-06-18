@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35.0 -35.0 750.0 365.0" role="img" aria-labelledby="title">
+<title>Observable Agent Work</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
+<rect x="-35.0" y="-35.0" width="750.0" height="365.0" rx="18" fill="#ffffff"/>
+<line x1="180" y1="40.0" x2="250" y2="130.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="430" y1="130.0" x2="500" y2="40.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="340.0" y1="170" x2="340.0" y2="215" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="340.0" y="182.5" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#5a665f">record</text>
+<rect x="0" y="0" width="180" height="80" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="90.0" y="36.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Inputs</text>
+<text x="90.0" y="54.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">prompt + rules</text>
+<rect x="250" y="90" width="180" height="80" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
+<text x="340.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Actions</text>
+<text x="340.0" y="144.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">tools + edits</text>
+<rect x="500" y="0" width="180" height="80" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
+<text x="590.0" y="36.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Outputs</text>
+<text x="590.0" y="54.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">diff + proof</text>
+<rect x="250" y="215" width="180" height="80" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="340.0" y="260.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Audit log</text>
+</svg>

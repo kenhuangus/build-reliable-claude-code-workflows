@@ -1,0 +1,50 @@
+{
+  "title": "Permission Zones",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "allow",
+      "type": "rect",
+      "x": 0,
+      "y": 70,
+      "w": 180,
+      "h": 90,
+      "text": "Allow\nread + tests",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "ask",
+      "type": "rect",
+      "x": 250,
+      "y": 70,
+      "w": 180,
+      "h": 90,
+      "text": "Ask first\nconfig + deps",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "block",
+      "type": "rect",
+      "x": 500,
+      "y": 70,
+      "w": 180,
+      "h": 90,
+      "text": "Block\nsecrets + prod",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "allow",
+      "to": "ask",
+      "text": "more blast radius"
+    },
+    {
+      "type": "arrow",
+      "from": "ask",
+      "to": "block",
+      "text": "irreversible"
+    }
+  ]
+}

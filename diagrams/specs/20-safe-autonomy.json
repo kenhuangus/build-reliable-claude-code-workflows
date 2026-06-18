@@ -1,0 +1,78 @@
+{
+  "title": "Safe Autonomy Pattern",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "risk",
+      "type": "rect",
+      "x": 0,
+      "y": 80,
+      "w": 120,
+      "h": 70,
+      "text": "Classify\nrisk",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "dream",
+      "type": "rect",
+      "x": 160,
+      "y": 80,
+      "w": 120,
+      "h": 70,
+      "text": "Dream\nplan",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "gate",
+      "type": "rect",
+      "x": 320,
+      "y": 80,
+      "w": 120,
+      "h": 70,
+      "text": "Human\ngate",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "act",
+      "type": "rect",
+      "x": 480,
+      "y": 80,
+      "w": 120,
+      "h": 70,
+      "text": "Act\nnarrowly",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "learn",
+      "type": "rect",
+      "x": 640,
+      "y": 80,
+      "w": 120,
+      "h": 70,
+      "text": "Record\nlessons",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "type": "arrow",
+      "from": "risk",
+      "to": "dream"
+    },
+    {
+      "type": "arrow",
+      "from": "dream",
+      "to": "gate"
+    },
+    {
+      "type": "arrow",
+      "from": "gate",
+      "to": "act"
+    },
+    {
+      "type": "arrow",
+      "from": "act",
+      "to": "learn"
+    }
+  ]
+}

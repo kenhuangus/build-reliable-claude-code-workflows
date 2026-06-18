@@ -1,0 +1,78 @@
+{
+  "title": "MCP Pipeline",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "agent",
+      "type": "rect",
+      "x": 0,
+      "y": 90,
+      "w": 130,
+      "h": 70,
+      "text": "Agent",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "client",
+      "type": "rect",
+      "x": 185,
+      "y": 90,
+      "w": 130,
+      "h": 70,
+      "text": "MCP\nclient",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "server",
+      "type": "rect",
+      "x": 370,
+      "y": 90,
+      "w": 130,
+      "h": 70,
+      "text": "MCP\nserver",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "tool",
+      "type": "rect",
+      "x": 555,
+      "y": 0,
+      "w": 130,
+      "h": 70,
+      "text": "Tool",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "data",
+      "type": "rect",
+      "x": 555,
+      "y": 190,
+      "w": 130,
+      "h": 70,
+      "text": "Data",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "agent",
+      "to": "client"
+    },
+    {
+      "type": "arrow",
+      "from": "client",
+      "to": "server"
+    },
+    {
+      "type": "arrow",
+      "from": "server",
+      "to": "tool"
+    },
+    {
+      "type": "arrow",
+      "from": "server",
+      "to": "data"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "title": "Agent Roles",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "task",
+      "type": "ellipse",
+      "x": 285,
+      "y": 100,
+      "w": 140,
+      "h": 90,
+      "text": "Task",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "plan",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 150,
+      "h": 60,
+      "text": "Planner",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "build",
+      "type": "rect",
+      "x": 530,
+      "y": 0,
+      "w": 150,
+      "h": 60,
+      "text": "Builder",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "test",
+      "type": "rect",
+      "x": 0,
+      "y": 230,
+      "w": 150,
+      "h": 60,
+      "text": "Tester",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "review",
+      "type": "rect",
+      "x": 530,
+      "y": 230,
+      "w": 150,
+      "h": 60,
+      "text": "Critic",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "plan",
+      "to": "task"
+    },
+    {
+      "type": "arrow",
+      "from": "build",
+      "to": "task"
+    },
+    {
+      "type": "arrow",
+      "from": "test",
+      "to": "task"
+    },
+    {
+      "type": "arrow",
+      "from": "review",
+      "to": "task"
+    }
+  ]
+}

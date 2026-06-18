@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35.0 45.0 830.0 140.0" role="img" aria-labelledby="title">
+<title>Safe Autonomy Pattern</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
+<rect x="-35.0" y="45.0" width="830.0" height="140.0" rx="18" fill="#ffffff"/>
+<line x1="120" y1="115.0" x2="160" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="280" y1="115.0" x2="320" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="440" y1="115.0" x2="480" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="600" y1="115.0" x2="640" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="0" y="80" width="120" height="70" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="60.0" y="111.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Classify</text>
+<text x="60.0" y="129.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">risk</text>
+<rect x="160" y="80" width="120" height="70" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
+<text x="220.0" y="111.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Dream</text>
+<text x="220.0" y="129.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">plan</text>
+<rect x="320" y="80" width="120" height="70" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
+<text x="380.0" y="111.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Human</text>
+<text x="380.0" y="129.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">gate</text>
+<rect x="480" y="80" width="120" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="540.0" y="111.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Act</text>
+<text x="540.0" y="129.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">narrowly</text>
+<rect x="640" y="80" width="120" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="700.0" y="111.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Record</text>
+<text x="700.0" y="129.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">lessons</text>
+</svg>

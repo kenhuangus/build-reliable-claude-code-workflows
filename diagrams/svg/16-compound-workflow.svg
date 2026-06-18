@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35.0 55.0 810.0 140.0" role="img" aria-labelledby="title">
+<title>Compound Workflow</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
+<rect x="-35.0" y="55.0" width="810.0" height="140.0" rx="18" fill="#ffffff"/>
+<line x1="120" y1="125.0" x2="155" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="275" y1="125.0" x2="310" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="430" y1="125.0" x2="465" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="585" y1="125.0" x2="620" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="0" y="90" width="120" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="60.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Planner</text>
+<rect x="155" y="90" width="120" height="70" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
+<text x="215.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Retriever</text>
+<rect x="310" y="90" width="120" height="70" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
+<text x="370.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Coder</text>
+<rect x="465" y="90" width="120" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="525.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Tester</text>
+<rect x="620" y="90" width="120" height="70" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
+<text x="680.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Critic</text>
+</svg>

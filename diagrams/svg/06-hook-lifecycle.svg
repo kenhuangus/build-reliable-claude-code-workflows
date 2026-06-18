@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-35.0 55.0 730.0 150.0" role="img" aria-labelledby="title">
+<title>Hook Lifecycle</title>
+<defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
+<rect x="-35.0" y="55.0" width="730.0" height="150.0" rx="18" fill="#ffffff"/>
+<line x1="160" y1="130.0" x2="250" y2="130.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<line x1="410" y1="130.0" x2="500" y2="130.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="0" y="90" width="160" height="80" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
+<text x="80.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Pre-flight</text>
+<text x="80.0" y="144.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">scope check</text>
+<rect x="250" y="90" width="160" height="80" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
+<text x="330.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">During</text>
+<text x="330.0" y="144.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">log + block</text>
+<rect x="500" y="90" width="160" height="80" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
+<text x="580.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Post-work</text>
+<text x="580.0" y="144.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">test + report</text>
+</svg>

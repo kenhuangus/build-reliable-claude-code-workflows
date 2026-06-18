@@ -1,0 +1,85 @@
+{
+  "title": "Agent Dreaming Loop",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "goal",
+      "type": "rect",
+      "x": 0,
+      "y": 95,
+      "w": 120,
+      "h": 68,
+      "text": "Goal",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "plan",
+      "type": "rect",
+      "x": 165,
+      "y": 25,
+      "w": 120,
+      "h": 68,
+      "text": "Plan",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "simulate",
+      "type": "rect",
+      "x": 345,
+      "y": 25,
+      "w": 120,
+      "h": 68,
+      "text": "Simulate",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "critique",
+      "type": "rect",
+      "x": 345,
+      "y": 190,
+      "w": 120,
+      "h": 68,
+      "text": "Critique",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "act",
+      "type": "rect",
+      "x": 560,
+      "y": 95,
+      "w": 120,
+      "h": 68,
+      "text": "Act",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "type": "arrow",
+      "from": "goal",
+      "to": "plan"
+    },
+    {
+      "type": "arrow",
+      "from": "plan",
+      "to": "simulate"
+    },
+    {
+      "type": "arrow",
+      "from": "simulate",
+      "to": "critique"
+    },
+    {
+      "type": "arrow",
+      "from": "critique",
+      "to": "plan",
+      "text": "revise"
+    },
+    {
+      "type": "arrow",
+      "from": "critique",
+      "to": "act",
+      "text": "gate"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "title": "Security Fix Skill",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "finding",
+      "type": "rect",
+      "x": 0,
+      "y": 90,
+      "w": 135,
+      "h": 70,
+      "text": "Finding",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "trace",
+      "type": "rect",
+      "x": 190,
+      "y": 90,
+      "w": 135,
+      "h": 70,
+      "text": "Trace path",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "patch",
+      "type": "rect",
+      "x": 380,
+      "y": 90,
+      "w": 135,
+      "h": 70,
+      "text": "Patch",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "test",
+      "type": "rect",
+      "x": 570,
+      "y": 90,
+      "w": 135,
+      "h": 70,
+      "text": "Regression\ntest",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "type": "arrow",
+      "from": "finding",
+      "to": "trace"
+    },
+    {
+      "type": "arrow",
+      "from": "trace",
+      "to": "patch"
+    },
+    {
+      "type": "arrow",
+      "from": "patch",
+      "to": "test"
+    }
+  ]
+}

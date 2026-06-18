@@ -1,0 +1,94 @@
+{
+  "title": "Agent Harness System",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "req",
+      "type": "rect",
+      "x": 0,
+      "y": 90,
+      "w": 120,
+      "h": 64,
+      "text": "Request",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "spec",
+      "type": "rect",
+      "x": 170,
+      "y": 90,
+      "w": 120,
+      "h": 64,
+      "text": "Spec",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "agent",
+      "type": "ellipse",
+      "x": 350,
+      "y": 70,
+      "w": 150,
+      "h": 104,
+      "text": "Agent",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "tools",
+      "type": "rect",
+      "x": 560,
+      "y": 0,
+      "w": 140,
+      "h": 64,
+      "text": "Tools",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "tests",
+      "type": "rect",
+      "x": 560,
+      "y": 95,
+      "w": 140,
+      "h": 64,
+      "text": "Tests",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "review",
+      "type": "rect",
+      "x": 560,
+      "y": 190,
+      "w": 140,
+      "h": 64,
+      "text": "Review",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "req",
+      "to": "spec"
+    },
+    {
+      "type": "arrow",
+      "from": "spec",
+      "to": "agent"
+    },
+    {
+      "type": "arrow",
+      "from": "agent",
+      "to": "tools"
+    },
+    {
+      "type": "arrow",
+      "from": "agent",
+      "to": "tests"
+    },
+    {
+      "type": "arrow",
+      "from": "tests",
+      "to": "review",
+      "text": "evidence"
+    }
+  ]
+}

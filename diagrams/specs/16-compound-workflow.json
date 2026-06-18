@@ -1,0 +1,78 @@
+{
+  "title": "Compound Workflow",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "planner",
+      "type": "rect",
+      "x": 0,
+      "y": 90,
+      "w": 120,
+      "h": 70,
+      "text": "Planner",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "retriever",
+      "type": "rect",
+      "x": 155,
+      "y": 90,
+      "w": 120,
+      "h": 70,
+      "text": "Retriever",
+      "backgroundColor": "#ecf4f8"
+    },
+    {
+      "id": "coder",
+      "type": "rect",
+      "x": 310,
+      "y": 90,
+      "w": 120,
+      "h": 70,
+      "text": "Coder",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "tester",
+      "type": "rect",
+      "x": 465,
+      "y": 90,
+      "w": 120,
+      "h": 70,
+      "text": "Tester",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "critic",
+      "type": "rect",
+      "x": 620,
+      "y": 90,
+      "w": 120,
+      "h": 70,
+      "text": "Critic",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "planner",
+      "to": "retriever"
+    },
+    {
+      "type": "arrow",
+      "from": "retriever",
+      "to": "coder"
+    },
+    {
+      "type": "arrow",
+      "from": "coder",
+      "to": "tester"
+    },
+    {
+      "type": "arrow",
+      "from": "tester",
+      "to": "critic"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "title": "Untrusted Content Boundary",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "issue",
+      "type": "rect",
+      "x": 0,
+      "y": 0,
+      "w": 170,
+      "h": 70,
+      "text": "Issue text",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "docs",
+      "type": "rect",
+      "x": 0,
+      "y": 180,
+      "w": 170,
+      "h": 70,
+      "text": "Web docs",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "id": "filter",
+      "type": "diamond",
+      "x": 250,
+      "y": 82,
+      "w": 170,
+      "h": 100,
+      "text": "Treat as\nfacts only",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "agent",
+      "type": "rect",
+      "x": 510,
+      "y": 90,
+      "w": 160,
+      "h": 80,
+      "text": "Agent\ninstructions",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "type": "arrow",
+      "from": "issue",
+      "to": "filter"
+    },
+    {
+      "type": "arrow",
+      "from": "docs",
+      "to": "filter"
+    },
+    {
+      "type": "arrow",
+      "from": "filter",
+      "to": "agent",
+      "text": "sanitized"
+    }
+  ]
+}

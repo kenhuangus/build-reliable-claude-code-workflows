@@ -1,0 +1,50 @@
+{
+  "title": "MCP Boundary Design",
+  "canvas": {
+    "backgroundColor": "#ffffff"
+  },
+  "elements": [
+    {
+      "id": "read",
+      "type": "rect",
+      "x": 0,
+      "y": 70,
+      "w": 160,
+      "h": 84,
+      "text": "Read tools\nsafe by default",
+      "backgroundColor": "#eef6f1"
+    },
+    {
+      "id": "write",
+      "type": "rect",
+      "x": 260,
+      "y": 70,
+      "w": 160,
+      "h": 84,
+      "text": "Write tools\nconfirm",
+      "backgroundColor": "#fff7dd"
+    },
+    {
+      "id": "admin",
+      "type": "rect",
+      "x": 520,
+      "y": 70,
+      "w": 160,
+      "h": 84,
+      "text": "Admin tools\nblock",
+      "backgroundColor": "#f8efef"
+    },
+    {
+      "type": "arrow",
+      "from": "read",
+      "to": "write",
+      "text": "side effects"
+    },
+    {
+      "type": "arrow",
+      "from": "write",
+      "to": "admin",
+      "text": "privilege"
+    }
+  ]
+}
