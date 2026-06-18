@@ -11,6 +11,7 @@ This folder is a static GitHub Pages slide deck with 60 slides for a 3-hour trai
 ## Diagrams
 
 - Rendered slide diagrams live in `diagrams/svg`.
+- Google Slides-friendly PNG diagram renders live in `diagrams/png`.
 - Editable Excalidraw source files live in `diagrams/excalidraw`.
 - Compact generation specs live in `diagrams/specs`.
 
