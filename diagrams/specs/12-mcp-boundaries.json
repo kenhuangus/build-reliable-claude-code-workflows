@@ -12,6 +12,8 @@
       "w": 160,
       "h": 84,
       "text": "Read tools\nsafe by default",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -22,6 +24,8 @@
       "w": 160,
       "h": 84,
       "text": "Write tools\nconfirm",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -32,18 +36,24 @@
       "w": 160,
       "h": 84,
       "text": "Admin tools\nblock",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
       "type": "arrow",
       "from": "read",
       "to": "write",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "text": "side effects"
     },
     {
       "type": "arrow",
       "from": "write",
       "to": "admin",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "text": "privilege"
     }
   ]

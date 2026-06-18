@@ -12,6 +12,8 @@
       "w": 180,
       "h": 86,
       "text": "Plugin",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -22,6 +24,8 @@
       "w": 150,
       "h": 62,
       "text": "Skills",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -32,6 +36,8 @@
       "w": 150,
       "h": 62,
       "text": "MCP servers",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -42,6 +48,8 @@
       "w": 150,
       "h": 62,
       "text": "Apps",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -52,27 +60,37 @@
       "w": 150,
       "h": 62,
       "text": "Policy",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
       "type": "arrow",
       "from": "skills",
-      "to": "plugin"
+      "to": "plugin",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "mcp",
-      "to": "plugin"
+      "to": "plugin",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "plugin",
-      "to": "apps"
+      "to": "apps",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "plugin",
-      "to": "policy"
+      "to": "policy",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

@@ -12,6 +12,8 @@
       "w": 180,
       "h": 92,
       "text": "Skill\nhow to work",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -22,6 +24,8 @@
       "w": 180,
       "h": 92,
       "text": "MCP\nwhat to reach",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -32,18 +36,24 @@
       "w": 180,
       "h": 92,
       "text": "Plugin\nhow to package",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
       "type": "arrow",
       "from": "skill",
       "to": "mcp",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "text": "uses"
     },
     {
       "type": "arrow",
       "from": "mcp",
       "to": "plugin",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "text": "bundled in"
     }
   ]

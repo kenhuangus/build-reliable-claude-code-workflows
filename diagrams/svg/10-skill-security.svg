@@ -6,12 +6,12 @@
 <line x1="325" y1="125.0" x2="380" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="515" y1="125.0" x2="570" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <rect x="0" y="90" width="135" height="70" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="67.5" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Finding</text>
+<text x="67.5" y="132.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Finding</text>
 <rect x="190" y="90" width="135" height="70" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
-<text x="257.5" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Trace path</text>
+<text x="257.5" y="132.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Trace path</text>
 <rect x="380" y="90" width="135" height="70" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
-<text x="447.5" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Patch</text>
+<text x="447.5" y="132.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Patch</text>
 <rect x="570" y="90" width="135" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
-<text x="637.5" y="121.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Regression</text>
-<text x="637.5" y="139.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">test</text>
+<text x="637.5" y="120.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Regression</text>
+<text x="637.5" y="144.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">test</text>
 </svg>

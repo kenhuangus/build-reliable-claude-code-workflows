@@ -12,6 +12,8 @@
       "w": 135,
       "h": 70,
       "text": "Finding",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -22,6 +24,8 @@
       "w": 135,
       "h": 70,
       "text": "Trace path",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -32,6 +36,8 @@
       "w": 135,
       "h": 70,
       "text": "Patch",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -42,22 +48,30 @@
       "w": 135,
       "h": 70,
       "text": "Regression\ntest",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
       "type": "arrow",
       "from": "finding",
-      "to": "trace"
+      "to": "trace",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "trace",
-      "to": "patch"
+      "to": "patch",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "patch",
-      "to": "test"
+      "to": "test",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

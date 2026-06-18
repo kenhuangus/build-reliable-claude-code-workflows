@@ -12,8 +12,13 @@ This folder is a static GitHub Pages slide deck with 60 slides for a 3-hour trai
 
 - Rendered slide diagrams live in `diagrams/svg`.
 - Google Slides-friendly PNG diagram renders live in `diagrams/png`.
-- Editable Excalidraw source files live in `diagrams/excalidraw`.
+- Editable Excalidraw source files live in `diagrams/excalidraw` and use handwritten-style labels.
 - Compact generation specs live in `diagrams/specs`.
+
+## PowerPoint
+
+- `build-reliable-claude-code-workflows.pptx` is the 60-slide PowerPoint export.
+- The current export uses larger presentation-room typography and embeds PNG diagram renders for reliable Google Slides import.
 
 ## Publish on GitHub Pages
 

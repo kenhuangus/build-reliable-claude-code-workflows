@@ -12,6 +12,8 @@
       "w": 120,
       "h": 70,
       "text": "Classify\nrisk",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -22,6 +24,8 @@
       "w": 120,
       "h": 70,
       "text": "Dream\nplan",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -32,6 +36,8 @@
       "w": 120,
       "h": 70,
       "text": "Human\ngate",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -42,6 +48,8 @@
       "w": 120,
       "h": 70,
       "text": "Act\nnarrowly",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -52,27 +60,37 @@
       "w": 120,
       "h": 70,
       "text": "Record\nlessons",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
       "type": "arrow",
       "from": "risk",
-      "to": "dream"
+      "to": "dream",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "dream",
-      "to": "gate"
+      "to": "gate",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "gate",
-      "to": "act"
+      "to": "act",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "act",
-      "to": "learn"
+      "to": "learn",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

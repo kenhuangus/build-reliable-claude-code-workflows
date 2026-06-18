@@ -3,16 +3,16 @@
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
 <rect x="-35.0" y="35.0" width="750.0" height="160.0" rx="18" fill="#ffffff"/>
 <line x1="180" y1="115.0" x2="250" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="215.0" y="105.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#5a665f">more blast radius</text>
+<text x="215.0" y="105.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-size="20" fill="#5a665f">more blast radius</text>
 <line x1="430" y1="115.0" x2="500" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="465.0" y="105.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#5a665f">irreversible</text>
+<text x="465.0" y="105.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-size="20" fill="#5a665f">irreversible</text>
 <rect x="0" y="70" width="180" height="90" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
-<text x="90.0" y="111.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Allow</text>
-<text x="90.0" y="129.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">read + tests</text>
+<text x="90.0" y="110.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Allow</text>
+<text x="90.0" y="134.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">read + tests</text>
 <rect x="250" y="70" width="180" height="90" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
-<text x="340.0" y="111.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Ask first</text>
-<text x="340.0" y="129.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">config + deps</text>
+<text x="340.0" y="110.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Ask first</text>
+<text x="340.0" y="134.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">config + deps</text>
 <rect x="500" y="70" width="180" height="90" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="590.0" y="111.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Block</text>
-<text x="590.0" y="129.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">secrets + prod</text>
+<text x="590.0" y="110.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Block</text>
+<text x="590.0" y="134.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">secrets + prod</text>
 </svg>

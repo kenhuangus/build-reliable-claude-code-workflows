@@ -12,6 +12,8 @@
       "w": 180,
       "h": 80,
       "text": "Inputs\nprompt + rules",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -22,6 +24,8 @@
       "w": 180,
       "h": 80,
       "text": "Actions\ntools + edits",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -32,6 +36,8 @@
       "w": 180,
       "h": 80,
       "text": "Outputs\ndiff + proof",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -42,22 +48,30 @@
       "w": 180,
       "h": 80,
       "text": "Audit log",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
       "type": "arrow",
       "from": "inputs",
-      "to": "actions"
+      "to": "actions",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "actions",
-      "to": "outputs"
+      "to": "outputs",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "actions",
       "to": "audit",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "text": "record"
     }
   ]

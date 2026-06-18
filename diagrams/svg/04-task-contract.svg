@@ -3,11 +3,11 @@
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
 <rect x="-35.0" y="-35.0" width="690.0" height="354.0" rx="18" fill="#ffffff"/>
 <rect x="0" y="0" width="620" height="56" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
-<text x="310.0" y="33.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Objective: what outcome should exist?</text>
+<text x="310.0" y="35.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Objective: what outcome should exist?</text>
 <rect x="0" y="76" width="620" height="56" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
-<text x="310.0" y="109.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Scope: what files and behaviors are in bounds?</text>
+<text x="310.0" y="111.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Scope: what files and behaviors are in bounds?</text>
 <rect x="0" y="152" width="620" height="56" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
-<text x="310.0" y="185.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Non-goals: what must not change?</text>
+<text x="310.0" y="187.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Non-goals: what must not change?</text>
 <rect x="0" y="228" width="620" height="56" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="310.0" y="261.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Evidence: what proves completion?</text>
+<text x="310.0" y="263.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Evidence: what proves completion?</text>
 </svg>

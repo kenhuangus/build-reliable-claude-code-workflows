@@ -12,6 +12,8 @@
       "w": 120,
       "h": 70,
       "text": "Planner",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -22,6 +24,8 @@
       "w": 120,
       "h": 70,
       "text": "Retriever",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -32,6 +36,8 @@
       "w": 120,
       "h": 70,
       "text": "Coder",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -42,6 +48,8 @@
       "w": 120,
       "h": 70,
       "text": "Tester",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -52,27 +60,37 @@
       "w": 120,
       "h": 70,
       "text": "Critic",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
       "type": "arrow",
       "from": "planner",
-      "to": "retriever"
+      "to": "retriever",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "retriever",
-      "to": "coder"
+      "to": "coder",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "coder",
-      "to": "tester"
+      "to": "tester",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "tester",
-      "to": "critic"
+      "to": "critic",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

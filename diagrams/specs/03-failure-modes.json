@@ -12,6 +12,8 @@
       "w": 130,
       "h": 82,
       "text": "Agent",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -22,6 +24,8 @@
       "w": 170,
       "h": 62,
       "text": "Intent drift",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -32,6 +36,8 @@
       "w": 170,
       "h": 62,
       "text": "Scope creep",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -42,6 +48,8 @@
       "w": 170,
       "h": 62,
       "text": "Tool misuse",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -52,27 +60,37 @@
       "w": 170,
       "h": 62,
       "text": "Weak evidence",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
       "type": "arrow",
       "from": "agent",
-      "to": "intent"
+      "to": "intent",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "agent",
-      "to": "scope"
+      "to": "scope",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "agent",
-      "to": "tools"
+      "to": "tools",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "agent",
-      "to": "evidence"
+      "to": "evidence",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

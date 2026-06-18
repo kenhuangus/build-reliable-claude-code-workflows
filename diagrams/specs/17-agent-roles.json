@@ -12,6 +12,8 @@
       "w": 140,
       "h": 90,
       "text": "Task",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -22,6 +24,8 @@
       "w": 150,
       "h": 60,
       "text": "Planner",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -32,6 +36,8 @@
       "w": 150,
       "h": 60,
       "text": "Builder",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -42,6 +48,8 @@
       "w": 150,
       "h": 60,
       "text": "Tester",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -52,27 +60,37 @@
       "w": 150,
       "h": 60,
       "text": "Critic",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
       "type": "arrow",
       "from": "plan",
-      "to": "task"
+      "to": "task",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "build",
-      "to": "task"
+      "to": "task",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "test",
-      "to": "task"
+      "to": "task",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "review",
-      "to": "task"
+      "to": "task",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

@@ -5,12 +5,12 @@
 <line x1="160" y1="130.0" x2="250" y2="130.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="410" y1="130.0" x2="500" y2="130.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <rect x="0" y="90" width="160" height="80" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
-<text x="80.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Pre-flight</text>
-<text x="80.0" y="144.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">scope check</text>
+<text x="80.0" y="125.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Pre-flight</text>
+<text x="80.0" y="149.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">scope check</text>
 <rect x="250" y="90" width="160" height="80" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
-<text x="330.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">During</text>
-<text x="330.0" y="144.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">log + block</text>
+<text x="330.0" y="125.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">During</text>
+<text x="330.0" y="149.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">log + block</text>
 <rect x="500" y="90" width="160" height="80" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
-<text x="580.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Post-work</text>
-<text x="580.0" y="144.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">test + report</text>
+<text x="580.0" y="125.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Post-work</text>
+<text x="580.0" y="149.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">test + report</text>
 </svg>

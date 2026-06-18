@@ -12,6 +12,8 @@
       "w": 170,
       "h": 70,
       "text": "Issue text",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -22,6 +24,8 @@
       "w": 170,
       "h": 70,
       "text": "Web docs",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -32,6 +36,8 @@
       "w": 170,
       "h": 100,
       "text": "Treat as\nfacts only",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -42,22 +48,30 @@
       "w": 160,
       "h": 80,
       "text": "Agent\ninstructions",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
       "type": "arrow",
       "from": "issue",
-      "to": "filter"
+      "to": "filter",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "docs",
-      "to": "filter"
+      "to": "filter",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "filter",
       "to": "agent",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "text": "sanitized"
     }
   ]

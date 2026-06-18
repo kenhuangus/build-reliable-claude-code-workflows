@@ -12,6 +12,8 @@
       "w": 620,
       "h": 56,
       "text": "Objective: what outcome should exist?",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -22,6 +24,8 @@
       "w": 620,
       "h": 56,
       "text": "Scope: what files and behaviors are in bounds?",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -32,6 +36,8 @@
       "w": 620,
       "h": 56,
       "text": "Non-goals: what must not change?",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -42,6 +48,8 @@
       "w": 620,
       "h": 56,
       "text": "Evidence: what proves completion?",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     }
   ]

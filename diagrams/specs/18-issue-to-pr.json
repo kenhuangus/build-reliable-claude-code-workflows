@@ -12,6 +12,8 @@
       "w": 125,
       "h": 70,
       "text": "Issue",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -22,6 +24,8 @@
       "w": 125,
       "h": 70,
       "text": "Plan",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -32,6 +36,8 @@
       "w": 125,
       "h": 70,
       "text": "Patch",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -42,6 +48,8 @@
       "w": 125,
       "h": 70,
       "text": "CI",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -52,27 +60,37 @@
       "w": 125,
       "h": 70,
       "text": "PR",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
       "type": "arrow",
       "from": "issue",
-      "to": "plan"
+      "to": "plan",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "plan",
-      "to": "patch"
+      "to": "patch",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "patch",
-      "to": "ci"
+      "to": "ci",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "ci",
-      "to": "pr"
+      "to": "pr",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

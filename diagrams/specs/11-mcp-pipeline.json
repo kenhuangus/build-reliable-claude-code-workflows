@@ -12,6 +12,8 @@
       "w": 130,
       "h": 70,
       "text": "Agent",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -22,6 +24,8 @@
       "w": 130,
       "h": 70,
       "text": "MCP\nclient",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -32,6 +36,8 @@
       "w": 130,
       "h": 70,
       "text": "MCP\nserver",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -42,6 +48,8 @@
       "w": 130,
       "h": 70,
       "text": "Tool",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -52,27 +60,37 @@
       "w": 130,
       "h": 70,
       "text": "Data",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
       "type": "arrow",
       "from": "agent",
-      "to": "client"
+      "to": "client",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "client",
-      "to": "server"
+      "to": "server",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "server",
-      "to": "tool"
+      "to": "tool",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "server",
-      "to": "data"
+      "to": "data",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

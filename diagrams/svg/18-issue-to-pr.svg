@@ -7,13 +7,13 @@
 <line x1="465" y1="115.0" x2="510" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="635" y1="115.0" x2="680" y2="115.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <rect x="0" y="80" width="125" height="70" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="62.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Issue</text>
+<text x="62.5" y="122.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Issue</text>
 <rect x="170" y="80" width="125" height="70" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
-<text x="232.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Plan</text>
+<text x="232.5" y="122.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Plan</text>
 <rect x="340" y="80" width="125" height="70" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
-<text x="402.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Patch</text>
+<text x="402.5" y="122.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Patch</text>
 <rect x="510" y="80" width="125" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
-<text x="572.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">CI</text>
+<text x="572.5" y="122.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">CI</text>
 <rect x="680" y="80" width="125" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
-<text x="742.5" y="120.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">PR</text>
+<text x="742.5" y="122.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">PR</text>
 </svg>

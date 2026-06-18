@@ -12,6 +12,8 @@
       "w": 160,
       "h": 86,
       "text": "Skill",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -22,6 +24,8 @@
       "w": 150,
       "h": 58,
       "text": "Trigger",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -32,6 +36,8 @@
       "w": 150,
       "h": 58,
       "text": "Workflow",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -42,6 +48,8 @@
       "w": 150,
       "h": 58,
       "text": "Scripts",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -52,27 +60,37 @@
       "w": 150,
       "h": 58,
       "text": "Verification",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
       "type": "arrow",
       "from": "trigger",
-      "to": "skill"
+      "to": "skill",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "workflow",
-      "to": "skill"
+      "to": "skill",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "skill",
-      "to": "scripts"
+      "to": "scripts",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "skill",
-      "to": "verify"
+      "to": "verify",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

@@ -12,6 +12,8 @@
       "w": 160,
       "h": 78,
       "text": "Fast agent",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -22,6 +24,8 @@
       "w": 170,
       "h": 96,
       "text": "Harness?",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -32,6 +36,8 @@
       "w": 190,
       "h": 76,
       "text": "Risky diff",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -42,17 +48,23 @@
       "w": 190,
       "h": 76,
       "text": "Reviewable change",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
       "type": "arrow",
       "from": "fast",
-      "to": "gate"
+      "to": "gate",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "gate",
       "to": "risk",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "end": "left",
       "text": "no"
     },
@@ -60,6 +72,8 @@
       "type": "arrow",
       "from": "gate",
       "to": "safe",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "end": "left",
       "text": "yes"
     }

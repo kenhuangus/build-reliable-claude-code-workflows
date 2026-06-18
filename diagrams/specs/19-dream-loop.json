@@ -12,6 +12,8 @@
       "w": 120,
       "h": 68,
       "text": "Goal",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -22,6 +24,8 @@
       "w": 120,
       "h": 68,
       "text": "Plan",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
@@ -32,6 +36,8 @@
       "w": 120,
       "h": 68,
       "text": "Simulate",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -42,6 +48,8 @@
       "w": 120,
       "h": 68,
       "text": "Critique",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#f8efef"
     },
     {
@@ -52,33 +60,45 @@
       "w": 120,
       "h": 68,
       "text": "Act",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
       "type": "arrow",
       "from": "goal",
-      "to": "plan"
+      "to": "plan",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "plan",
-      "to": "simulate"
+      "to": "simulate",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "simulate",
-      "to": "critique"
+      "to": "critique",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "critique",
       "to": "plan",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "text": "revise"
     },
     {
       "type": "arrow",
       "from": "critique",
       "to": "act",
+      "fontFamily": "handwriting",
+      "fontSize": 22,
       "text": "gate"
     }
   ]

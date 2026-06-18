@@ -12,6 +12,8 @@
       "w": 160,
       "h": 80,
       "text": "Pre-flight\nscope check",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#eef6f1"
     },
     {
@@ -22,6 +24,8 @@
       "w": 160,
       "h": 80,
       "text": "During\nlog + block",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#ecf4f8"
     },
     {
@@ -32,17 +36,23 @@
       "w": 160,
       "h": 80,
       "text": "Post-work\ntest + report",
+      "fontFamily": "handwriting",
+      "fontSize": 28,
       "backgroundColor": "#fff7dd"
     },
     {
       "type": "arrow",
       "from": "pre",
-      "to": "during"
+      "to": "during",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     },
     {
       "type": "arrow",
       "from": "during",
-      "to": "post"
+      "to": "post",
+      "fontFamily": "handwriting",
+      "fontSize": 22
     }
   ]
 }

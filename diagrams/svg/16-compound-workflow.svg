@@ -7,13 +7,13 @@
 <line x1="430" y1="125.0" x2="465" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="585" y1="125.0" x2="620" y2="125.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <rect x="0" y="90" width="120" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
-<text x="60.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Planner</text>
+<text x="60.0" y="132.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Planner</text>
 <rect x="155" y="90" width="120" height="70" rx="12" fill="#ecf4f8" stroke="#17201c" stroke-width="3"/>
-<text x="215.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Retriever</text>
+<text x="215.0" y="132.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Retriever</text>
 <rect x="310" y="90" width="120" height="70" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
-<text x="370.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Coder</text>
+<text x="370.0" y="132.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Coder</text>
 <rect x="465" y="90" width="120" height="70" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
-<text x="525.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Tester</text>
+<text x="525.0" y="132.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Tester</text>
 <rect x="620" y="90" width="120" height="70" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="680.0" y="130.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Critic</text>
+<text x="680.0" y="132.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Critic</text>
 </svg>

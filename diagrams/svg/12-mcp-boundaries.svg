@@ -3,16 +3,16 @@
 <defs><marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#17201c"/></marker></defs>
 <rect x="-35.0" y="35.0" width="750.0" height="154.0" rx="18" fill="#ffffff"/>
 <line x1="160" y1="112.0" x2="260" y2="112.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="210.0" y="102.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#5a665f">side effects</text>
+<text x="210.0" y="102.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-size="20" fill="#5a665f">side effects</text>
 <line x1="420" y1="112.0" x2="520" y2="112.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
-<text x="470.0" y="102.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" fill="#5a665f">privilege</text>
+<text x="470.0" y="102.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-size="20" fill="#5a665f">privilege</text>
 <rect x="0" y="70" width="160" height="84" rx="12" fill="#eef6f1" stroke="#17201c" stroke-width="3"/>
-<text x="80.0" y="108.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Read tools</text>
-<text x="80.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">safe by default</text>
+<text x="80.0" y="107.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Read tools</text>
+<text x="80.0" y="131.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">safe by default</text>
 <rect x="260" y="70" width="160" height="84" rx="12" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
-<text x="340.0" y="108.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Write tools</text>
-<text x="340.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">confirm</text>
+<text x="340.0" y="107.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Write tools</text>
+<text x="340.0" y="131.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">confirm</text>
 <rect x="520" y="70" width="160" height="84" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="600.0" y="108.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Admin tools</text>
-<text x="600.0" y="126.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">block</text>
+<text x="600.0" y="107.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Admin tools</text>
+<text x="600.0" y="131.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">block</text>
 </svg>

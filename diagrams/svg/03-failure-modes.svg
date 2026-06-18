@@ -7,13 +7,13 @@
 <line x1="420" y1="146.0" x2="535" y2="31.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <line x1="420" y1="146.0" x2="535" y2="251.0" stroke="#17201c" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
 <ellipse cx="355.0" cy="146.0" rx="65.0" ry="41.0" fill="#fff7dd" stroke="#17201c" stroke-width="3"/>
-<text x="355.0" y="151.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Agent</text>
+<text x="355.0" y="153.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Agent</text>
 <rect x="0" y="0" width="170" height="62" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="85.0" y="36.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Intent drift</text>
+<text x="85.0" y="38.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Intent drift</text>
 <rect x="0" y="220" width="170" height="62" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="85.0" y="256.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Scope creep</text>
+<text x="85.0" y="258.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Scope creep</text>
 <rect x="535" y="0" width="170" height="62" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="620.0" y="36.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Tool misuse</text>
+<text x="620.0" y="38.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Tool misuse</text>
 <rect x="535" y="220" width="170" height="62" rx="12" fill="#f8efef" stroke="#17201c" stroke-width="3"/>
-<text x="620.0" y="256.0" text-anchor="middle" font-family="Segoe UI, sans-serif" font-weight="700" font-size="16" fill="#17201c">Weak evidence</text>
+<text x="620.0" y="258.0" text-anchor="middle" font-family="Segoe Print, Comic Sans MS, Virgil, cursive" font-weight="700" font-size="21" fill="#17201c">Weak evidence</text>
 </svg>
